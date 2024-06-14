@@ -9,7 +9,7 @@ const TodoList = (props) => {
 
        return element.state1==false && (<li>
 
-             <span>{element.item}</span><button onClick={()=>props.handleComplete(element.item)}>Complete</button>
+             <span>{element.item}</span><button id={element} onClick={()=>props.handleComplete(element.item)}>Complete</button>
 
 
           </li>)
