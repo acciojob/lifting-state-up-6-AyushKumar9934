@@ -7,12 +7,12 @@ const TodoList = (props) => {
      {
         props.todos.map(element => {
 
-       return <li>
+       return element.state1==false && (<li>
 
-             <span>{element.item}</span>{element.state1==false &&<button onClick={()=>props.handleComplete(element.item)}>Complete</button>}
+             <span>{element.item}</span><button onClick={()=>props.handleComplete(element.item)}>Complete</button>
 
 
-          </li>
+          </li>)
 
             
         })
